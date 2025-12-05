@@ -1,0 +1,73 @@
+.alert-banner {
+    background: rgba(255, 42, 42, 0.15);
+    border: 2px solid #ff2a2a;
+    color: #ff2a2a;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    animation: pulse-red 2s infinite;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 42, 42, 0.3);
+}
+
+.alert-icon {
+    font-size: 3rem;
+    animation: shake 0.5s infinite alternate;
+}
+
+.alert-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.alert-mag {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: #ff2a2a;
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.alert-loc {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.alert-time {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@keyframes pulse-red {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 42, 42, 0.2);
+        border-color: rgba(255, 42, 42, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(255, 42, 42, 0.6);
+        border-color: #ff2a2a;
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 42, 42, 0.2);
+        border-color: rgba(255, 42, 42, 0.5);
+    }
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+}

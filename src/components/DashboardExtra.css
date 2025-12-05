@@ -1,0 +1,19 @@
+.btn-icon {
+    background: transparent;
+    border: 1px solid var(--surface-border);
+    color: var(--text-primary);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.btn-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+}
+
+.btn-icon .value {
+    font-size: 1.5rem !important;
+    /* Override orbitron size if handled there */
+}
